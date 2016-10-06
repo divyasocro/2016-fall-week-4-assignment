@@ -6,6 +6,14 @@
 
 function reverseArray(arr){
     //your code here
-}
+   
 
+
+var arr2 = [];
+for(i=0; i<arr.length; i++) {
+	var element = arr[i];
+	arr2.unshift(element);
+  }
+  return arr2;
+}
 console.log( reverseArray([1,2,3,4,5]) ); //should log [5,4,3,2,1]
